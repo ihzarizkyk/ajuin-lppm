@@ -1,0 +1,9 @@
+.card-img-top{
+    max-height: 190px;
+    border-radius: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

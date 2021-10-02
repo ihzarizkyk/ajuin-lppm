@@ -1,0 +1,51 @@
+
+
+
+#hero{
+    background-image: url("../assets_ajuin/image 2.png");
+    
+    background-size: cover;
+    width: 100%;
+    min-height: max-content;
+    height: 100%;
+}
+
+.scrollspy-container { 
+	height:100%; overflow-x: auto;
+    
+    
+}
+.scrollspy-example {
+	width: 5000px;
+    display: flex;
+    float: none; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.scrollspy-example navbar{
+    background-color: white;
+}
+
+  
+  .navbar {
+    background-color: transparent !important;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-function: ease-in-out;
+  }
+  
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    color: #ffffff !important;
+  }
+  
+  .navbar-collapse, .navbar-nav, .nav-item {
+    color: inherit !important;
+  }
+
+
+  
