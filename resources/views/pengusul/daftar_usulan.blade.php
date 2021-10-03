@@ -59,8 +59,8 @@
                               </summary>
                           </td>
                           <td>
-                            <a href="{{ url('pengusul/'.$item->id) }} " class="btn btn-icon btn-danger"><i class="fas fa-trash"></i></a>
-                            <a href="/daftar/kerjasama/{{$item->id}}/ubah" class="btn btn-icon btn-info"><i class="fa fa-edit"></i></a>
+                            <a href="/kerjasama/{{ $item->id }}/hapus" class="btn btn-icon btn-danger" onclick="return confirm('Anda yakin ingin menghapus?');"><i class="fas fa-trash"></i></a>
+                            <a href="/kerjasama/{{$item->id}}/ubah" class="btn btn-icon btn-info"><i class="fa fa-edit"></i></a>
                           </td>
                         </tr>
                          @endforeach

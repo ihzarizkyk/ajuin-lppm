@@ -82,6 +82,7 @@ class PengusulController extends Controller
         //
     }
 
+    // menampilkan data edit dari relasi dengan bentuk kegiatan
     public function edit($id)
     {
         $items = Kerjasama::with('bentukKegiatans')->find($id);
@@ -114,8 +115,12 @@ class PengusulController extends Controller
         return redirect()->route('daftar_usulan');
     }
 
+    // menghapus data kerjasama dengan relasi polymorph bentuk kegiatan
     public function destroy($id)
     {
-        //
+        $kerjasama = Kerjasama::find($id);
+        $kerjasama->delete();
+        $kerjasama->bentukKegiatans()->detach();
+        return redirect()->route('daftar_usulan');
     }
 }

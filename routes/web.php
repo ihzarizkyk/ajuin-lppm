@@ -33,7 +33,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('pengusul', PengusulController::class);
     Route::get('daftar/usulan', [PengusulController::class, 'daftar_usulan'])->name('daftar_usulan');
     Route::get('daftar/kerjasama', [PengusulController::class, 'daftar_kerjasama'])->name('daftar_kerjasama');
-    Route::get('daftar/kerjasama/{id}/ubah',[PengusulController::class,'edit']);
+    Route::get('/kerjasama/{id}/ubah',[PengusulController::class,'edit']);
+    Route::get('/kerjasama/{id}/hapus',[PengusulController::class,'destroy']);
     Route::post('daftar/kerjasama/update',[PengusulController::class,'update'])->name('kerjasama.update');
     Route::post('daftar/kerjasama', [PengusulController::class, 'simpan_kerjasama']);
     Route::get('access/user',[AccessController::class,'index'])->name("access.user");
