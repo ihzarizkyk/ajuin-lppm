@@ -52,9 +52,15 @@
                           <td>
                               <summary>
                                 <details>
-                           @foreach($item->bentukKegiatans as $items)
-                          {{ $items['nama'].','}}
-                            @endforeach
+    
+                                  <ol class="float-left">
+                                    @foreach($item->bentukKegiatans as $items)
+                                    <li>
+                                      {{$items['nama']}}
+                                    </li>
+                                    @endforeach
+                                  </ol>
+
                                 </details>
                               </summary>
                           </td>
