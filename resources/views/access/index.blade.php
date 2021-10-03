@@ -26,6 +26,7 @@
 					<th>No</th>
 					<th>Nama</th>
 					<th>Jabatan</th>
+					<th>Peralihan</th>
 					<th>Aksi</th>
 				</tr>
 			</thead>
@@ -37,38 +38,41 @@
 					<td>{{$usr->name}}</td>
 					<td>{{$usr->jabatan ?? '-'}}</td>
 					<td>
-						<button class="btn btn-sm btn-dark" onclick="show()">
-							Jabatan
-						</button>
+						<summary>
+							<details>
+								<div id="jabatan">
+									
+										<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/legal">
+											Legal
+										</a>
+									
+									
+										<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/pengusul">
+											Pengusul
+										</a>
+									
+									
+										<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/pengelola">
+											Pengelola
+										</a>
+									
+									
+										<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/pimpinan">
+											Pimpinan
+										</a>
+									
+							
+								</div>
+							</details>
+						</summary>
+					</td>
 
-						<div id="jabatan">
-							
-								<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/legal">
-									Legal
-								</a>
-							
-							
-								<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/pengusul">
-									Pengusul
-								</a>
-							
-							
-								<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/pengelola">
-									Pengelola
-								</a>
-							
-							
-								<a class="btn btn-sm btn-info" href="/access/user/{{$usr->id}}/pimpinan">
-									Pimpinan
-								</a>
-							
-					
-						</div>
-
+					<td>
 						<a href="/access/user/{{$usr->id}}/delete" class="btn btn-sm btn-danger" onclick="return confirm('Are You Sure?');">
 							Delete
 						</a>
 					</td>
+
 				</tr>
 				@endforeach
 			</tbody>
@@ -76,20 +80,4 @@
 		</table>
 	</div>
 
-@endsection
-@section('script')
-    <script>
-        $(document).ready( function () {
-            $('#access').DataTable();
-        } );
-
-   		function show() {
-  		var x = document.getElementById("jabatan");
-  		if (x.style.display === "none") {
-    		x.style.display = "block";
-  			} else {
-    		x.style.display = "none";
-  			}
-		}
-    </script>
 @endsection
