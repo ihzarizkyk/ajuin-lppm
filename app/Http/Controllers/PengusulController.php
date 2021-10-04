@@ -61,6 +61,8 @@ class PengusulController extends Controller
         $kerjasama->unit_pelaksana = $request->unit_pelaksana;
         $kerjasama->deskripsi = $request->deskripsi;
         $kerjasama->rencana = $request->rencana_implementasi;
+        $kerjasama->awal_kerjasama = $request->awal_kerjasama;
+        $kerjasama->akhir_kerjasama = $request->akhir_kerjasama;
         $kerjasama->lama_kerjasama = now();
         $kerjasama->file = $nama_file;
         // $kerjasama->dokumen_id = $request->dokumen;
@@ -105,6 +107,8 @@ class PengusulController extends Controller
         $kerjasama->deskripsi = $request->deskripsi;
         $kerjasama->rencana = $request->rencana_implementasi;
         $kerjasama->lama_kerjasama = now();
+        $kerjasama->awal_kerjasama = $request->awal_kerjasama;
+        $kerjasama->akhir_kerjasama = $request->akhir_kerjasama;
         // $kerjasama->dokumen_id = $request->dokumen;
         $kerjasama->status = '0';
         $kerjasama->users_id = Auth::user()->id;

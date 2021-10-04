@@ -58,6 +58,22 @@
                 </div>
             </div>
 
+            <div class="form-group mr-3 mb-3">
+                <label>Awal Kerjasama</label>
+                <input class="form-control" type="date" value="{{old('awal_kerjasama')}}" name="awal_kerjasama" tabindex="1" required autofocus>
+                <div class="invalid-feedback">
+                    Harus diisi
+                </div>
+            </div>
+
+            <div class="form-group mr-3 mb-3">
+                <label>Akhir Kerjasama</label>
+                <input class="form-control" type="date" value="{{old('akhir_kerjasama')}}" name="akhir_kerjasama" tabindex="1" required autofocus>
+                <div class="invalid-feedback">
+                    Harus diisi
+                </div>
+            </div>
+
             <div class="form-group">
                 <label>Bentuk Kegiatan</label>
                 <select class="form-control" id="bentuk_kegiatan" name="bentuk_kegiatan[]" multiple="multiple">

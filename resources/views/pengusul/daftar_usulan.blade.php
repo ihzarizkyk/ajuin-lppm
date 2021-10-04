@@ -38,6 +38,7 @@
                           <th>Tanggal Diajukan</th>
                           <!-- <th>Dokumen Penunjang</th> -->
                           <th>Kegiatan</th>
+                          <th>Durasi Kerjasama</th>
                           <!-- <th>Hapus</th> -->
                           <th>Action</th>
                         </tr>
@@ -64,6 +65,7 @@
                                 </details>
                               </summary>
                           </td>
+                          <td>{{$items->awal_kerjasama}} sampai {{$items->akhir_kerjasama}}</td>
                           <td>
                             <a href="/kerjasama/{{ $item->id }}/hapus" class="btn btn-icon btn-danger" onclick="return confirm('Anda yakin ingin menghapus?');"><i class="fas fa-trash"></i></a>
                             <a href="/kerjasama/{{$item->id}}/ubah" class="btn btn-icon btn-info"><i class="fa fa-edit"></i></a>
