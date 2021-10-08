@@ -16,6 +16,11 @@ use App\Http\Controllers\kerjasama\MitraController;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/news', function() {
+    return view('news');
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/logout', [App\Http\Controllers\HomeController::class, 'logout'])->name('logout');
 Auth::routes();
