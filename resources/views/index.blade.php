@@ -170,7 +170,7 @@
 
         </div>
         <div class="container-fluid py-5">
-          <h1 class="d-flex justify-content-center fw-bold py-5">BERITA</h1>
+          <h1 class="d-flex justify-content-center fw-bold py-5">Unesa News</h1>
           <div class="row">
               <div class="col d-flex justify-content-center m-2 mb-5">
                 <a href="#">
@@ -178,7 +178,7 @@
                     <img src="ajuin/n1.jpg" class="card-img-top " alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Kucing Lucu</h5>
-                      <p class="card-text">kucing imut sedang minta di manja ea ea.</p>
+                      <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis voluptas non, minus quam sint quidem omnis, neque. Minima iste repellendus odit deleniti ipsam, minus necessitatibus.</p>
                       <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle px-4 py-1">Baca</a>
                     </div>
                   </div>
@@ -191,8 +191,8 @@
                 <div class="card shadow-lg" style="width: 18rem;">
                   <img src="ajuin/n2.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">DIJUAL!!!!</h5>
-                    <p class="card-text mb-4">Dijual kursi stephen hawking seharga 80 dolar.</p>
+                    <h5 class="card-title">ITS News</h5>
+                    <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod odio, enim laudantium alias quasi, rerum fugiat sint obcaecati iusto nostrum eius, odit magnam voluptates praesentium?</p>
                     <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle px-4 py-1">Baca</a>
                   </div>
                 </div>
@@ -204,8 +204,8 @@
                 <div class="card shadow-lg" style="width: 18rem;">
                   <img src="ajuin/n3.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Tetap Santuy</h5>
-                    <p class="card-text">meski kecelakaan bapak-bapak ini tetap santuy.</p>
+                    <h5 class="card-title">ITTelkom SBY News</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quisquam architecto molestias magni ex facere laborum ducimus, ipsam neque voluptatum doloribus, saepe ratione accusantium, nesciunt.</p>
                     <a href="#" class="btn btn-primary position-absolute top-100 start-50 translate-middle px-4 py-1">Baca</a>
                   </div>
                 </div>
